@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="ClipPilot — video clipping and publishing" data-ru="ClipPilot — нарезка видео и публикация">ClipPilot — video clipping and publishing</title>
+<meta name="description" content="ClipPilot cuts long videos into short vertical clips and publishes them to the owner's YouTube, Instagram and TikTok accounts." data-en="ClipPilot cuts long videos into short vertical clips and publishes them to the owner's YouTube, Instagram and TikTok accounts." data-ru="ClipPilot нарезает длинные видео на короткие вертикальные клипы и публикует их в аккаунты владельца на YouTube, Instagram и TikTok.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/lang.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">ClipPilot</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" aria-current="page"><span lang="en">Home</span><span lang="ru">Главная</span></a>
+      <a href="privacy.html"><span lang="en">Privacy</span><span lang="ru">Конфиденциальность</span></a>
+      <a href="terms.html"><span lang="en">Terms</span><span lang="ru">Условия</span></a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-set-lang="ru" aria-pressed="false">RU</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div lang="en">
+        <span class="eyebrow">Video clipping &amp; publishing</span>
+        <h1>Long videos in. <span class="grad">Ready-to-post clips</span> out.</h1>
+        <p class="lead">ClipPilot cuts long videos into short vertical clips and publishes them to the owner's own YouTube, Instagram and TikTok accounts — with a human approval step before anything goes live.</p>
+      </div>
+      <div lang="ru">
+        <span class="eyebrow">Нарезка видео и публикация</span>
+        <h1>Длинное видео на входе. <span class="grad">Готовые клипы</span> на выходе.</h1>
+        <p class="lead">ClipPilot нарезает длинные видео на короткие вертикальные клипы и публикует их в собственные аккаунты владельца на YouTube, Instagram и TikTok — перед публикацией каждый клип проходит ручное одобрение.</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="#how"><span lang="en">How it works</span><span lang="ru">Как это работает</span></a>
+        <a class="btn ghost" href="privacy.html"><span lang="en">Privacy policy</span><span lang="ru">Политика конфиденциальности</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="how">
+    <div class="wrap">
+      <div lang="en">
+        <h2>How it works</h2>
+        <p class="sub">From a long recording to published Shorts, Reels and TikToks in four steps.</p>
+        <div class="grid steps">
+          <div class="card"><span class="num">1</span><h3>Send a video</h3><p>The operator sends a link or a file to a private Telegram bot, which is the control panel of the service.</p></div>
+          <div class="card"><span class="num">2</span><h3>Find the best moments</h3><p>Speech is transcribed (from existing subtitles or with Whisper) and the strongest self-contained fragments are selected, each with a title and hashtags.</p></div>
+          <div class="card"><span class="num">3</span><h3>Cut and polish</h3><p>Every fragment becomes a vertical 1080×1920 clip with a blurred or cropped background and large subtitles.</p></div>
+          <div class="card"><span class="num">4</span><h3>Approve and publish</h3><p>The operator reviews the clips in Telegram. Approved clips are queued and sent to the connected accounts on a schedule — posted on YouTube and Instagram, delivered as drafts on TikTok.</p></div>
+        </div>
+      </div>
+      <div lang="ru">
+        <h2>Как это работает</h2>
+        <p class="sub">От длинной записи до опубликованных Shorts, Reels и TikTok — за четыре шага.</p>
+        <div class="grid steps">
+          <div class="card"><span class="num">1</span><h3>Отправляете видео</h3><p>Оператор присылает ссылку или файл приватному Telegram-боту — это панель управления сервисом.</p></div>
+          <div class="card"><span class="num">2</span><h3>Поиск лучших моментов</h3><p>Речь распознаётся (из готовых субтитров или через Whisper), выбираются самые сильные законченные фрагменты — каждому подбираются заголовок и хэштеги.</p></div>
+          <div class="card"><span class="num">3</span><h3>Нарезка и оформление</h3><p>Из каждого фрагмента получается вертикальный клип 1080×1920 с размытым или обрезанным фоном и крупными субтитрами.</p></div>
+          <div class="card"><span class="num">4</span><h3>Одобрение и публикация</h3><p>Оператор просматривает клипы в Telegram. Одобренные клипы встают в очередь и по расписанию уходят в подключённые аккаунты — на YouTube и в Instagram публикуются, в TikTok попадают черновиками.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div lang="en">
+        <h2>Where clips are published</h2>
+        <p class="sub">ClipPilot works only through the official APIs of each platform, using access that the account owner grants and can revoke at any time.</p>
+        <div class="grid cols3">
+          <div class="card"><span class="tag">YouTube</span><h3>Shorts</h3><p>Upload through the YouTube Data API; view counts and audience retention are read through the YouTube Data and Analytics APIs.</p></div>
+          <div class="card"><span class="tag">Instagram</span><h3>Reels</h3><p>Publishing and insights through the Instagram API with Instagram Login, for Business and Creator accounts.</p></div>
+          <div class="card"><span class="tag">TikTok</span><h3>Drafts</h3><p>Upload to the account's drafts through the TikTok Content Posting API after the owner authorizes the app. The owner reviews and publishes the video in the TikTok app.</p></div>
+        </div>
+      </div>
+      <div lang="ru">
+        <h2>Куда публикуются клипы</h2>
+        <p class="sub">ClipPilot работает только через официальные API площадок — с доступом, который владелец аккаунта выдаёт сам и может отозвать в любой момент.</p>
+        <div class="grid cols3">
+          <div class="card"><span class="tag">YouTube</span><h3>Shorts</h3><p>Загрузка через YouTube Data API; просмотры и удержание зрителей читаются через YouTube Data API и YouTube Analytics API.</p></div>
+          <div class="card"><span class="tag">Instagram</span><h3>Reels</h3><p>Публикация и статистика через Instagram API with Instagram Login — для аккаунтов Business и Creator.</p></div>
+          <div class="card"><span class="tag">TikTok</span><h3>Черновики</h3><p>Загрузка в черновики аккаунта через TikTok Content Posting API после того, как владелец авторизует приложение. Видео просматривает и публикует сам владелец в приложении TikTok.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="note" lang="en">
+        <p><strong>A private tool, not a public service.</strong> ClipPilot is operated by its developer and publishes only to accounts that the operator owns and has connected through official sign-in. It never asks for or stores your platform passwords. Details are in the <a href="privacy.html">Privacy Policy</a> and the <a href="terms.html">Terms of Use</a>.</p>
+        <p>Questions or data deletion requests: <a href="mailto:kirilltaktas@gmail.com">kirilltaktas@gmail.com</a>.</p>
+      </div>
+      <div class="note" lang="ru">
+        <p><strong>Личный инструмент, а не публичный сервис.</strong> ClipPilot управляется его разработчиком и публикует только в те аккаунты, которыми владеет оператор и которые он подключил через официальную авторизацию. Сервис не запрашивает и не хранит ваши пароли от площадок. Подробности — в <a href="privacy.html">политике конфиденциальности</a> и <a href="terms.html">условиях использования</a>.</p>
+        <p>Вопросы и запросы на удаление данных: <a href="mailto:kirilltaktas@gmail.com">kirilltaktas@gmail.com</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="row">
+      <span>© 2026 ClipPilot</span>
+      <span class="links">
+        <a href="privacy.html"><span lang="en">Privacy Policy</span><span lang="ru">Политика конфиденциальности</span></a>
+        <a href="terms.html"><span lang="en">Terms of Use</span><span lang="ru">Условия использования</span></a>
+        <a href="mailto:kirilltaktas@gmail.com">kirilltaktas@gmail.com</a>
+      </span>
+    </div>
+    <p class="legal" lang="en">YouTube is a trademark of Google LLC, Instagram of Meta Platforms, Inc., TikTok of TikTok Ltd. ClipPilot is an independent project and is not affiliated with, sponsored or endorsed by them.</p>
+    <p class="legal" lang="ru">YouTube — товарный знак Google LLC, Instagram — Meta Platforms, Inc., TikTok — TikTok Ltd. ClipPilot — независимый проект, не связан с этими компаниями и не спонсируется и не одобряется ими.</p>
+  </div>
+</footer>
+
+</body>
+</html>
