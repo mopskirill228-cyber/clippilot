@@ -51,7 +51,8 @@
         <tr><td>Instagram (Meta)</td><td><code>instagram_business_basic</code></td><td>Identify the connected account: username, account ID and account type.</td></tr>
         <tr><td>Instagram (Meta)</td><td><code>instagram_business_content_publish</code></td><td>Publish Reels to the connected account.</td></tr>
         <tr><td>Instagram (Meta)</td><td><code>instagram_business_manage_insights</code></td><td>Read performance metrics (such as views and likes) of the Reels we published.</td></tr>
-        <tr><td>TikTok</td><td><code>video.publish</code></td><td>Publish videos to the connected account and read the publishing status.</td></tr>
+        <tr><td>TikTok</td><td><code>user.info.basic</code></td><td>Identify the connected account: display name and open ID.</td></tr>
+        <tr><td>TikTok</td><td><code>video.upload</code></td><td>Upload videos to the account as drafts, which the account owner publishes themselves in the TikTok app; read the upload status.</td></tr>
       </tbody>
     </table>
   </div>
@@ -62,7 +63,7 @@
     <li><strong>Telegram identifiers and messages</strong> of the operator and the people they have given access to, because the service is controlled through a Telegram bot.</li>
     <li><strong>Service records</strong>: the list of connected accounts, publishing queue and results, and the performance statistics described above.</li>
   </ul>
-  <p>This website itself collects nothing: no forms, no accounts, no cookies, no analytics or advertising trackers, and no third-party fonts or scripts. The only thing it stores is your language choice, saved locally in your browser (<code>localStorage</code>) and never sent anywhere.</p>
+  <p>This website itself collects nothing: no forms, no accounts, no cookies, no analytics or advertising trackers, and no third-party fonts or scripts. The only thing it stores is your language choice, saved locally in your browser (<code>localStorage</code>) and never sent anywhere. The TikTok sign-in return page only shows the authorization code in your browser so that you can copy it; it sends nothing and clears the address bar.</p>
 
   <h2>3. How we use data</h2>
   <p>We use the data only to provide the features you see: clipping videos, publishing clips to the connected accounts, and showing the operator statistics about the published clips. We do not sell data, do not use it for advertising, and do not build user profiles.</p>
@@ -79,7 +80,7 @@
   <h2>5. Who else receives data</h2>
   <p>We do not sell, rent or give your data to third parties. Data leaves the server only in these cases, each necessary for the service to work:</p>
   <ul>
-    <li><strong>The platforms you publish to</strong> (Google/YouTube, Meta/Instagram, TikTok) receive the clips, titles and captions we publish on your behalf, and the API requests we make. Their own privacy policies apply to that data.</li>
+    <li><strong>The platforms you publish to</strong> (Google/YouTube, Meta/Instagram, TikTok) receive the clips we upload (and, for YouTube and Instagram, the titles and captions) on your behalf, and the API requests we make. On TikTok, videos arrive as drafts without a caption. Their own privacy policies apply to that data.</li>
     <li><strong>Anthropic</strong> (Claude API) receives the <em>text transcript and title of a source video</em> so that the strongest moments and titles can be suggested. It does not receive access tokens, and it does not receive data obtained from Google, Instagram or TikTok APIs.</li>
     <li><strong>Cloudflare</strong> provides a temporary encrypted tunnel through which Instagram downloads the clip file at the moment of publishing (Instagram requires a public link to the video). The link contains a random secret, serves one file and is closed right after Instagram has processed the video.</li>
     <li><strong>Authorities</strong>, if we are legally required to disclose data.</li>
@@ -135,7 +136,8 @@
         <tr><td>Instagram (Meta)</td><td><code>instagram_business_basic</code></td><td>Определение подключённого аккаунта: имя пользователя, ID и тип аккаунта.</td></tr>
         <tr><td>Instagram (Meta)</td><td><code>instagram_business_content_publish</code></td><td>Публикация Reels в подключённый аккаунт.</td></tr>
         <tr><td>Instagram (Meta)</td><td><code>instagram_business_manage_insights</code></td><td>Чтение показателей (например, просмотров и лайков) опубликованных нами Reels.</td></tr>
-        <tr><td>TikTok</td><td><code>video.publish</code></td><td>Публикация видео в подключённый аккаунт и чтение статуса публикации.</td></tr>
+        <tr><td>TikTok</td><td><code>user.info.basic</code></td><td>Определение подключённого аккаунта: отображаемое имя и open ID.</td></tr>
+        <tr><td>TikTok</td><td><code>video.upload</code></td><td>Загрузка видео в аккаунт как черновика, который владелец публикует сам в приложении TikTok; чтение статуса загрузки.</td></tr>
       </tbody>
     </table>
   </div>
@@ -146,7 +148,7 @@
     <li><strong>Идентификаторы и сообщения в Telegram</strong> оператора и людей, которым он дал доступ, — сервис управляется через Telegram-бота.</li>
     <li><strong>Служебные записи</strong>: список подключённых аккаунтов, очередь публикаций и их результаты, статистика, описанная выше.</li>
   </ul>
-  <p>Сам этот сайт ничего не собирает: на нём нет форм, аккаунтов, cookie, аналитики и рекламных трекеров, нет сторонних шрифтов и скриптов. Единственное, что он запоминает, — выбранный вами язык: он сохраняется локально в вашем браузере (<code>localStorage</code>) и никуда не передаётся.</p>
+  <p>Сам этот сайт ничего не собирает: на нём нет форм, аккаунтов, cookie, аналитики и рекламных трекеров, нет сторонних шрифтов и скриптов. Единственное, что он запоминает, — выбранный вами язык: он сохраняется локально в вашем браузере (<code>localStorage</code>) и никуда не передаётся. Страница возврата после входа через TikTok лишь показывает код авторизации в вашем браузере, чтобы вы могли его скопировать; она ничего не отправляет и очищает адресную строку.</p>
 
   <h2>3. Как мы используем данные</h2>
   <p>Мы используем данные только для функций, которые вы видите: нарезка видео, публикация клипов в подключённые аккаунты и показ оператору статистики по опубликованным клипам. Мы не продаём данные, не используем их для рекламы и не составляем профили пользователей.</p>
@@ -163,7 +165,7 @@
   <h2>5. Кто ещё получает данные</h2>
   <p>Мы не продаём, не сдаём в аренду и не передаём ваши данные третьим лицам. Данные покидают сервер только в следующих случаях, и каждый из них необходим для работы сервиса:</p>
   <ul>
-    <li><strong>Площадки, на которые вы публикуете</strong> (Google/YouTube, Meta/Instagram, TikTok), получают клипы, заголовки и подписи, которые мы публикуем от вашего имени, и наши API-запросы. К этим данным применяются их собственные политики конфиденциальности.</li>
+    <li><strong>Площадки, на которые вы публикуете</strong> (Google/YouTube, Meta/Instagram, TikTok), получают клипы, которые мы загружаем (а на YouTube и в Instagram — ещё заголовки и подписи) от вашего имени, и наши API-запросы. В TikTok видео приходят черновиками без подписи. К этим данным применяются их собственные политики конфиденциальности.</li>
     <li><strong>Anthropic</strong> (Claude API) получает <em>текстовый транскрипт и название исходного видео</em>, чтобы предложить самые сильные моменты и заголовки. Токены доступа и данные, полученные через API Google, Instagram или TikTok, туда не передаются.</li>
     <li><strong>Cloudflare</strong> даёт временный зашифрованный туннель, через который Instagram скачивает файл клипа в момент публикации (Instagram требует публичную ссылку на видео). Ссылка содержит случайный секрет, отдаёт один файл и закрывается сразу после того, как Instagram обработал видео.</li>
     <li><strong>Государственные органы</strong> — если мы обязаны раскрыть данные по закону.</li>

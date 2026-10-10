@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title data-en="Authorization code — ClipPilot" data-ru="Код авторизации — ClipPilot">Authorization code — ClipPilot</title>
+<meta name="description" content="TikTok sign-in result for ClipPilot: copy the code into the terminal." data-en="TikTok sign-in result for ClipPilot: copy the code into the terminal." data-ru="Результат входа через TikTok для ClipPilot: скопируйте код в терминал.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/lang.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">ClipPilot</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html"><span lang="en">Home</span><span lang="ru">Главная</span></a>
+      <a href="privacy.html"><span lang="en">Privacy</span><span lang="ru">Конфиденциальность</span></a>
+      <a href="terms.html"><span lang="en">Terms</span><span lang="ru">Условия</span></a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-set-lang="ru" aria-pressed="false">RU</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap narrow">
+  <article class="doc callback">
+
+    <div lang="en">
+      <h1>Authorization code</h1>
+      <p class="meta">TikTok sign-in for ClipPilot</p>
+    </div>
+    <div lang="ru">
+      <h1>Код авторизации</h1>
+      <p class="meta">Вход через TikTok для ClipPilot</p>
+    </div>
+
+    <!-- code received -->
+    <section id="ok" hidden>
+      <div lang="en"><p class="lead small">Copy this code and paste it into the terminal where the <code>add-tiktok</code> command is waiting.</p></div>
+      <div lang="ru"><p class="lead small">Скопируйте этот код и вставьте его в терминал, где ждёт команда <code>add-tiktok</code>.</p></div>
+
+      <div class="codebox" id="codebox" tabindex="0" aria-label="Authorization code"><code id="code"></code></div>
+
+      <p class="actions">
+        <button id="copy" class="btn" type="button">
+          <span class="idle"><span lang="en">Copy code</span><span lang="ru">Скопировать</span></span>
+          <span class="done"><span lang="en">Copied ✓</span><span lang="ru">Скопировано ✓</span></span>
+        </button>
+      </p>
+
+      <div class="note">
+        <p lang="en"><strong>Paste the code into the terminal.</strong> Input is hidden, so you will not see it appear. The code is short-lived and works once — paste it right away.</p>
+        <p lang="ru"><strong>Вставьте код в терминал.</strong> Ввод скрыт, поэтому на экране ничего не появится. Код одноразовый и живёт недолго — вставьте его сразу.</p>
+        <p class="small" id="state-row" hidden>
+          <span lang="en">state:</span><span lang="ru">state:</span> <code id="state"></code>
+          <span lang="en">— it should match the one printed by the terminal.</span><span lang="ru">— он должен совпадать с тем, что напечатал терминал.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- TikTok returned an error -->
+    <section id="fail" hidden>
+      <div class="note">
+        <p lang="en"><strong>TikTok did not authorize the app.</strong> Run <code>add-tiktok</code> again and allow both permissions.</p>
+        <p lang="ru"><strong>TikTok не авторизовал приложение.</strong> Запустите <code>add-tiktok</code> ещё раз и разрешите оба права.</p>
+        <p class="small"><code id="fail-text"></code></p>
+      </div>
+    </section>
+
+    <!-- opened without parameters -->
+    <section id="none" hidden>
+      <div class="note">
+        <p lang="en"><strong>There is no code in this address.</strong> Open the authorization link printed by the <code>add-tiktok</code> command, sign in to TikTok and allow access — you will land here with the code.</p>
+        <p lang="ru"><strong>В адресе нет кода.</strong> Откройте ссылку авторизации, которую напечатала команда <code>add-tiktok</code>, войдите в TikTok и разрешите доступ — вы попадёте сюда уже с кодом.</p>
+      </div>
+    </section>
+
+    <noscript>
+      <div class="note">
+        <p lang="en">JavaScript is needed to show the code. Without it, copy the value after <code>code=</code> from the address bar.</p>
+        <p lang="ru">Чтобы показать код, нужен JavaScript. Без него скопируйте значение после <code>code=</code> из адресной строки.</p>
+      </div>
+    </noscript>
+
+    <p class="small muted">
+      <span lang="en">This page works entirely in your browser: the code is read from the address, shown here and never sent anywhere. After loading, the address bar is cleaned.</span>
+      <span lang="ru">Страница работает целиком в вашем браузере: код читается из адреса, показывается здесь и никуда не отправляется. После загрузки адресная строка очищается.</span>
+    </p>
+  </article>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="row">
+      <span>© 2026 ClipPilot</span>
+      <span class="links">
+        <a href="index.html"><span lang="en">Home</span><span lang="ru">Главная</span></a>
+        <a href="privacy.html"><span lang="en">Privacy Policy</span><span lang="ru">Политика конфиденциальности</span></a>
+        <a href="terms.html"><span lang="en">Terms of Use</span><span lang="ru">Условия использования</span></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var code = params.get("code");
+  var state = params.get("state");
+  var error = params.get("error");
+  var errorText = params.get("error_description");
+
+  function show(id) { document.getElementById(id).hidden = false; }
+
+  if (error) {
+    document.getElementById("fail-text").textContent = error + (errorText ? ": " + errorText : "");
+    show("fail");
+  } else if (code) {
+    document.getElementById("code").textContent = code;
+    if (state) {
+      document.getElementById("state").textContent = state;
+      document.getElementById("state-row").hidden = false;
+    }
+    show("ok");
+  } else {
+    show("none");
+  }
+
+  // the code must not stay in the address bar or the browser history
+  try { history.replaceState(null, "", location.pathname); } catch (e) {}
+
+  var box = document.getElementById("codebox");
+  var btn = document.getElementById("copy");
+  var timer;
+
+  function select() {
+    var range = document.createRange();
+    range.selectNodeContents(document.getElementById("code"));
+    var sel = getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+
+  function copied() {
+    btn.setAttribute("data-copied", "1");
+    clearTimeout(timer);
+    timer = setTimeout(function () { btn.removeAttribute("data-copied"); }, 2500);
+  }
+
+  box.addEventListener("click", select);
+  btn.addEventListener("click", function () {
+    if (!code) return;
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(code).then(copied, function () { select(); document.execCommand("copy") && copied(); });
+    } else {
+      select();
+      try { document.execCommand("copy") && copied(); } catch (e) {}
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
